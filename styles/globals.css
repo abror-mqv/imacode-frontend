@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap");
+
+@font-face {
+  font-family: "Days One";
+  src: local("Days One"), url("/media/font.ttf") format("truetype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Jura", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-image: url("/media/back.webp"); */
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 920px) {
+  body {
+    /* background-image: url("/media/foto_platy.webp") !important; */
+  }
+
+  .swiper-pagination {
+    display: none !important;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(131.19deg,
+      #FF003C 14.67%,
+      #FF003C 90%) !important;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 7px -1px #00F0FF,
+    inset -2px -2px 5px -2px #000000; */
+  border-radius: 19px;
+  width: 50px !important;
+  height: 50px !important;
+  margin-top: 10px !important;
+}
+
+.swiper-pagination-bullet {
+  background: linear-gradient(131.19deg,
+      #00F0FF 14.67%,
+      #00F0FF 90%);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 7px -1px #00F0FF,
+    inset -2px -2px 5px -2px #000000; */
+  border-radius: 19px;
+  width: 14px !important;
+  height: 14px !important;
+  margin-top: 10px !important;
+}
+
+.swiper-pagination-vertical {
+  position: fixed !important;
+  margin-right: 50px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 87% !important;
+  color: #000000 !important;
+  width: 10vh !important;
+  height: 12vh !important;
+}
+
+.swiper-button-prev {
+  left: -10px !important;
+}
+
+.swiper-button-next {
+  right: -10px !important;
+}
+
+.MuiFormLabel-root {
+  /* color: rgba(255, 255, 255, 0.564) !important; */
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1мц;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.MuiInputBase-inputMultiline::before {
+  border-bottom: 1px solid #000000 !important;
+}
+
+.css-66dh3a-MuiInputBase-input-MuiInput-input {
+  border-bottom: 1px solid #000000 !important;
+}
+
+.css-8q2m5j-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 1px solid #000000;
+}
+
+.css-66dh3a-MuiInputBase-input-MuiInput-input {
+  color: #000000;
+}
+
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid #000000 !important;
+}
+
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 3px solid #000000 !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+  color: #000000 !important;
+  font-size: large;
+}
+
+#courses {
+  transition: 0.3s;
+}
+
+.css-mnn31 {
+  color: #fff !important;
+}
+
+.css-1vv4lmi:after {
+  border-bottom: 2px solid #000000 !important;
+}
+
+input {
+  color: #fff;
+}
+
+.StyledBoxModal {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 30% !important;
+  background-color: rgba(113, 113, 113, 0.86);
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  text-align: center;
+}
+.modal-modal-title{
+  font-size: 32px;
+}
+.BoxModal__button {
+  width: 100%;
+  padding: 1%;
+  font-weight: 999;
+  background: rgba(255,0,60,1);
+  box-shadow: 6px 6px 12px #000000,
+    -3px -3px 14px -3px rgba(255, 255, 255, 0.66);
+  color: #ffffff;
+  font-family: "Jura" !important;
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 920px) {
+  .StyledBoxModal {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100% !important;
+    height: 30% !important;
+    background-color: rgba(113, 113, 113, 0.86);
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 !important;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .BoxModal__button {
+    width: 100%;
+    padding: 1%;
+    font-weight: 999;
+    background: rgba(255,0,60,1);
+    box-shadow: 6px 6px 12px #000000,
+      -3px -3px 14px -3px rgba(255, 255, 255, 0.66);
+    color: #ffffff;
+    font-family: "Jura" !important;
+    font-size: 28px;
+  }
+
+}
+
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  background-color: rgb(0 0 0 / 74%);
+}
+
+
+
+.Mui-checked{
+  color: #FF003C !important;
+}
+
+
+
+
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+.timer-text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+
+
+#standard-textarea{
+  color: #000000;
+}

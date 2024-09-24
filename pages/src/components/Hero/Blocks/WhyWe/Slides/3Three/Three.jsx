@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import Micro from "./path0.webp";
-import Image from "next/image";
 
 const StyledThree = styled.article`
   @media only screen and (max-width: 920px) {
@@ -81,7 +80,7 @@ function Three() {
           Веб-разработка, программирование и дизайн — это не просто востребованные профессии, но и возможность получения высоких доходов.
 
         </p>
-        <Image src="/media/career-choice.png" alt="" width={180} height={180} />
+        <img src="media/career-choice.png" alt="" />
       </p>
       <p className="Sex">
         Наши курсы помогут вам получить те знания и навыки, которые открывают двери в мир IT, где вас ждут привлекательные зарплаты и перспективы.

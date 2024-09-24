@@ -5,12 +5,11 @@ import styled from 'styled-components';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
-import Image from 'next/image';
 
 function CircularProgressWithLabel(props) {
     return (
         <Box sx={{ position: 'relative', display: 'inline-flex', color: "#56e5ab" }}>
-            <CircularProgress variant="determinate" {...props} size="6rem" color="inherit" />
+            <CircularProgress variant="determinate" {...props} size="4rem" color="inherit" />
             <Box
                 sx={{
                     top: 0,
@@ -27,7 +26,7 @@ function CircularProgressWithLabel(props) {
                 <Typography
                     variant="caption"
                     component="div"
-                    sx={{ color: 'black', fontSize: "32px", fontWeight: "bold" }}
+                    sx={{ color: 'black', fontSize: "24px", fontWeight: "bold" }}
 
                 >
                     {`${Math.round(props.value)}%`}
@@ -154,7 +153,7 @@ function TestPage() {
                 <div className='result'>
                     <h4>Из тебя выйдет отличный <br></br>Ui/Ux Дизайн</h4>
                     <p className='FeDesc'>UI/UX-дизайнеры отвечают за то, чтобы сайты и приложения были не только красивыми, но и удобными. Они создают макеты и прототипы, тестируют пользовательские сценарии.</p>
-                    <Image src="/media/uiux.jpg" alt="курсы веб-дизайна в бишкеке" className='desc_image' width={280} height={280}/>
+                    <img src="/media/uiux.jpg" alt="курсы веб-дизайна в бишкеке" className='desc_image' />
                 </div>
             )
         } else if (result == 2) {
@@ -165,7 +164,7 @@ function TestPage() {
                     <p className='FeDesc'>
                         Веб-разработчики создают визуальную часть сайтов и веб-приложений. Они работают с HTML, CSS, JavaScript, чтобы сделать сайты интерактивными и удобными для пользователей.
                     </p>
-                    <Image src="/media/fe.jpg" alt="курсы фронтенд бишкек" className='desc_image' width={280} height={280}/>
+                    <img src="/media/fe.jpg" alt="курсы фронтенд бишкек" className='desc_image' />
 
                 </div>
             )
@@ -175,7 +174,7 @@ function TestPage() {
                     <h4>Из тебя выйдет отличный <br></br>Python разработчик</h4>
 
                     <p className='FeDesc'>Python-разработчики создают серверную логику, обрабатывают данные, создают веб-сервисы и боты. Этот язык также часто используется в машинном обучении и науке о данных.</p>
-                    <Image src="/media/python.jpg" alt="курсы питона в бишкеке" className='desc_image' width={280} height={280}/>
+                    <img src="/media/python.jpg" alt="курсы питона в бишкеке" className='desc_image' />
 
                 </div>
             )
@@ -192,20 +191,17 @@ function TestPage() {
         }
     }
         .desc_image{
-            /* width: 46%; */
-            /* align-self: flex-end;
-            justify-self: end; */
-            width: auto !important;
-
-            min-width: auto !important;
+            width: 46%;
+            align-self: flex-end;
+            justify-self: end;
         }
         .FeDesc{
-            font-size: 28px;
+            font-size: 20px;
         }
         .App{
             display: flex;
             justify-content: center;
-            gap: 12%;
+            gap: 6%;
             .illustration{
                 margin-left: -8vw;
                 justify-self: start;
@@ -222,26 +218,26 @@ function TestPage() {
             .section{
                 display: flex;
                 flex-direction: column;
-                gap: 70px;
+                gap: 50px;
                 max-width: 50%;
                 justify-self: start !important;
                 align-self: flex-start !important;
-                margin-top: 6%;
+                margin-top: 2%;
                 .hear{
-                    font-size: 34px;
+                    font-size: 30px;
                     
                 }
                 .seci{
                     margin-left: 20px;
                     box-shadow: -10px -10px 0px 10px #56e5ab, 10px 10px 0px 10px #1b2e35;      
-                    padding: 24px;
+                    padding: 22px;
                     .question-section{
                         display: flex;
                         justify-content: space-between;
                         flex-direction: row;
                         align-items: flex-start;
-                        font-size: 32px;
-                        height: 92px;
+                        font-size: 20px;
+                        height: 62px;
                         margin-bottom: 24px;
                     }
                     .answer-section{
@@ -252,17 +248,17 @@ function TestPage() {
                         gap: 24px;
                         button{
                             font-size: x-large;
-                            padding: 12px 24px;
+                            padding: 0px 24px;
                             cursor: pointer;
                             text-align: start;
                             font-family: "Roboto";
                             border: 0px solid    black;
                             color: white;
                             background: #000000;
-                            font-size: 22   px;
+                            font-size: 16px;
                             transition: 0.2s;
                             /* border-radius: 15px; */
-                            height: 82px;
+                            height: 62px;
                         }
                         button:hover{
                             background-color: #56e5ab;
@@ -287,19 +283,19 @@ function TestPage() {
                 display: flex;
                 flex-direction: column;
                 h4{
-                    font-size: 28px;
+                    font-size: 24px;
                     line-height: 130%;
                     margin-bottom: 12px;
                 }
             }
                 .desc_image{
-                    /* width: 40%; */
-                    /* align-self: flex-end;
-                    justify-self: end; */
+                    width: 40%;
+                    align-self: flex-end;
+                    justify-self: end;
                     margin-top: 4%;
                 }
                 .FeDesc{
-                    font-size: 20px;
+                    font-size: 16px;
                 }
             .App{
                 flex-direction: column-reverse;
@@ -317,7 +313,7 @@ function TestPage() {
                     margin-top: 24px;
                     img{
                         margin-left: 0;
-                        /* width: 20vh; */
+                        width: 20vh;
                         position: absolute;
                         bottom: 10vh;
                        
@@ -327,7 +323,7 @@ function TestPage() {
                     max-width: 96%;
                     z-index: 9999;
                     .hear{
-                        font-size: 26px;
+                        font-size: 18px;
                     }
                     .seci{
                         margin-left: 0;
@@ -335,10 +331,10 @@ function TestPage() {
                         .question-section{
                             display: flex;
                             flex-direction: row;
-                            gap: 12px;
-                            height: 96px;
+                            gap: 6px;
+                            height: 62px;
                             .question-text{
-                                font-size: 26px;
+                                font-size: 18px;
                             }
                         }
                         
@@ -358,11 +354,9 @@ function TestPage() {
         <StyledTest>
             <Container className='App'>
                 <div className='illustration'>
-                    <Image
+                    <img
                         src="/media/test.jpg"
                         alt="Направления айти в бишкеке"
-                        width={500}
-                        height={500}
                     />
                 </div>
                 <div className='section'>

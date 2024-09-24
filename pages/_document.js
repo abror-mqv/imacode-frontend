@@ -1,4 +1,3 @@
-// pages/_document.js
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
@@ -28,7 +27,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Здесь можно добавить другие мета-теги, шрифты и т.д. */}
         </Head>
         <body>
           <Main />

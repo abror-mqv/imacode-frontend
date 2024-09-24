@@ -2,7 +2,6 @@ import React from "react";
 
 import styled from "styled-components";
 import Icon from "./icon.webp";
-import Image from "next/image";
 
 const OneStyled = styled.article`
   @media only screen and (max-width: 920px) {
@@ -73,7 +72,7 @@ function One() {
           </p>
         </div>
 
-        <Image src="/media/six.png" width={250} height={250}/>
+        <img src="media/six.png" />
       </p>
 
 

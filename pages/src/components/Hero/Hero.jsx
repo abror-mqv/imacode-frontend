@@ -34,7 +34,7 @@ const Main = styled.div`
   }
   width: 82vw;
   height: 78vh;
-  margin: 38px 0 0 140px;
+  margin: 38px 0 0 70px;
   color: black;
   @media only screen and (max-width: 920px) {
     & {

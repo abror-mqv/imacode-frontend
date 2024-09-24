@@ -19,10 +19,6 @@ export default function Home() {
           name="keywords"
           content="imacode academy, курсы, программирования, бишкек, в бишкеке, по программированию, frontend бишкек, смартфонов, ноутбуков, программирования frontend бишкек, обучение программирования, курсы программирования, j, обучение программирования ui ux бишкек, курсы программирования ui ux бишкек kg, по программированию python бишкек, бишкек, курсы бишкек, ремонт курсы, телефон ремонт, курсы, курсы программирования бишкек, ондоо курстары, курсы программирования python бишкек бишкек, нефели, imacode"
         />
-        <meta
-          name="google-site-verification"
-          content="toEKl8eevecUxpT6u2PV0jtQi9W8VS_Dd1f19bSMwaY"
-        />
         <meta name="author" content="Mamatkulov Abror" />
         <meta
           property="og:title"
@@ -40,6 +36,7 @@ export default function Home() {
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:type" content="website" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="Ss3zSZ3n0sIKsAhbmsJmi5UPNDugUlhmsdmsVxS13S4" />
       </Head>
       <Index />
     </div>

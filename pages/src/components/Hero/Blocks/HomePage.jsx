@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Bolts from "./Bolts/Bolts";
 
-import Image from "next/image";
 
 import SlideNextButton from "./SwipeCoursesButton";
 
@@ -40,13 +39,10 @@ const HomeStyle = styled.article`
       margin-left: 0 !important;
       margin-top: 2vh !important;
       background: rgb(200 200 200 / 26%) !important;
-      /* box-shadow: -8px -8px 37px -15px #ffffff, 25px 25px 50px -9px #000000 !important; */
       box-shadow: none !important;
       height: 75vh !important;
     }
-    /* img {
-      display: none;
-    } */
+    
     h1 {
       font-size: 6.5vw !important;
       line-height: 4vh !important;
@@ -255,7 +251,7 @@ const HomeStyle = styled.article`
 
       h1{
         margin-top: 165px;
-        font-size: 114px;
+        font-size: 80px;
         color: #000000;
         text-shadow: -2px -2px 0px #FF003C, 2px 2px 0px #00F0FF;
         text-transform: uppercase;
@@ -270,7 +266,8 @@ const HomeStyle = styled.article`
         justify-content: flex-end;
 align-items: flex-end ;
         .Logo{
-        width: 12%;
+        width: 16%;
+        margin-top: -8%;
         /* position: fixed; */
         /* position: absolute; */
         /* left: -80px; */
@@ -303,7 +300,7 @@ function HomePage() {
             В Бишкеке
           </p>
         </h1>
-        <p className="ImgParent"><Image src="/media/imacode_logo.webp" alt="Imacode" className="Logo" width={167} height={143}/></p>
+        <p className="ImgParent"><img src="/media/imacode_logo.webp" alt="Imacode" className="Logo"/></p>
 
       </div>
 

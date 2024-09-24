@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
 import Join from "./add-friend.png";
 import Price from "./Price.svg";
 
@@ -147,14 +146,7 @@ function Card(props) {
         <h3 className="YellowH">{props.primary_name}</h3>
       </div>
       <div className="Card">
-        <Image
-          className="Image"
-          loader={() => src}
-          src={src}
-          alt={`${props.primary_name} ${props.top_name}`}
-          width={200}
-          height={150}
-        />
+       
         <p className="CardParag">{props.description}</p>
         <div className="Price">
           {/* <SlideButton/> */}

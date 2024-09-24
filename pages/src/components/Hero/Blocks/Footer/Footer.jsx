@@ -154,23 +154,23 @@ function Footer() {
           <p className="footer__contacts">
             Контактные лица:
             <p className="footer__number">
-              +996 (707) 890 359
+              +996 (771) 501 526
               <br />
-              +996 (557) 890 359
+              +996 (701) 2222 04
             </p>
           </p>
           <p className="footer__media">
-            <Link href="https://www.instagram.com/academy_nefely/">
+            <Link href="https://www.instagram.com/abror_mqv/">
               <InstagramIcon
                 sx={{ color: "#000000", height: "4.2vh", width: "4.2vh" }}
               />
             </Link>
-            <Link href="https://wa.me/+996999344955?text=Здравстуйте,%27m%расскажите%20мне%20о%20ваших%20курсах">
+            <Link href="https://wa.me/+996701222204?text=Здравстуйте,%27m%расскажите%20мне%20о%20ваших%20курсах">
               <WhatsAppIcon
                 sx={{ color: "#000000", height: "4.2vh", width: "4.2vh" }}
               />
             </Link>
-            <Link href="tel:+996999344955">
+            <Link href="tel:+996771501526">
               <CallIcon
                 sx={{ color: "#000000", height: "4.2vh", width: "4.2vh" }}
               />

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Bolts from "./Bolts/Bolts";
 
+import Image from "next/image";
+
 import SlideNextButton from "./SwipeCoursesButton";
 
 const HomeStyle = styled.article`
@@ -244,6 +246,7 @@ const HomeStyle = styled.article`
         #d3fc00 55.21%,
         rgba(211, 252, 0, 0.05) 100%
       );
+      display: inline;
     }
     
   }
@@ -274,6 +277,7 @@ align-items: flex-end ;
         /* margin-top: -102px;
       margin-left: -6%;
       margin-bottom: -100px; */
+      display: inline-block;
       } 
       }
       
@@ -299,7 +303,7 @@ function HomePage() {
             В Бишкеке
           </p>
         </h1>
-        <p className="ImgParent"><img src="/media/imacode_logo.webp" alt="Imacode" className="Logo" /></p>
+        <p className="ImgParent"><Image src="/media/imacode_logo.webp" alt="Imacode" className="Logo" width={167} height={143}/></p>
 
       </div>
 

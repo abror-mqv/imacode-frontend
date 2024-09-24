@@ -48,7 +48,7 @@ const SwiperButtonPrev = ({ children }) => {
         backgroundColor: "aqua",
       }}
     >
-      <img src={Prev.src} alt="Предыдущий курс"/>
+    
     </Button>
   );
 };

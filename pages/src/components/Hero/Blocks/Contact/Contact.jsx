@@ -12,7 +12,7 @@ import Modal from "@mui/material/Modal";
 import FieldName from "./Field/FieldName";
 import FieldTel from "./Field/FieldTel";
 import { Button, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from "@mui/material";
-
+import Image from "next/image";
 const StyledContact = styled.div`
   @media only screen and (max-width: 920px) {
     .PhoneImg {
@@ -406,10 +406,12 @@ function Contact() {
           </Button>
         </Box>
       </Modal>
-      <img
+      <Image
         src="/media/hero-image.png"
         className="PhoneImg"
         alt="Наш оператор"
+        width={489}
+        height={489}
       />
     </StyledContact>
   );

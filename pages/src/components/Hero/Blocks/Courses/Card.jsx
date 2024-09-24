@@ -164,10 +164,7 @@ function Card(props) {
             }}
           >
             Записаться{" "}
-            <img
-              src={Join.src}
-              alt="Записаться на курсы по ремонту телеофнов"
-            />
+          
           </div>
         </div>
       </div>

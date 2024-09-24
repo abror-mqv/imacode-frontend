@@ -10,6 +10,8 @@ import "swiper/css/pagination";
 import Card from "./Card";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "@mui/material";
+import Image from "next/image";
+
 const CoursesStyled = styled.article`
 display: flex;
 flex-direction: column;
@@ -45,8 +47,8 @@ flex-direction: column;
         .description{
           font-size: 3vw !important;
         }
-        img{
-          width: 14vw !important;
+        .Illu{
+          /* width: 14vw !important; */
           margin-right: -20px;
         }
       }
@@ -118,11 +120,11 @@ flex-direction: column;
             /* width: 6%; */
           }
           position: relative;
-          img{
+          .Illu{
             position: absolute;
             top: 12px;
             right: 12px;
-            width: 130px;
+            /* width: 130px; */
           }
           box-shadow: 24px 24px 20px -23px rgba(255, 0, 60, 1);
         }
@@ -221,26 +223,26 @@ function Courses(props) {
             <h2>
               Веб-разработка
             </h2>
-            <img src="media/ux.png" alt="Frontend Logo" />
+            <Image src="/media/ux.png" alt="Frontend Logo" className="Illu" width={130} height={130}/>
             <p className="description">Освойте создание веб-сайтов с нуля! <br />Научитесь работать с HTML, CSS, Figma и JavaScript <br />за 2 месяца и создавайте стильные и функциональные сайты.</p>
           </div>
           <div className="Backend Card">
             <h2>
               Python-разработка
             </h2>
-            <img src="media/python.png" alt="Python Logo" />
+            <Image src="/media/python.png" alt="Python Logo" width={130} height={130} />
 
             <p className="description">Овладейте Python и Django, <br /> создавайте веб-приложения и Telegram-ботов. <br />Всего за 2 месяца вы освоите востребованные навыки программирования.</p>
           </div>
           <div className="UiUx Card">
             <h2>Веб-дизайн</h2>
-            <img src="media/web-design.png" alt="Python Logo" />
+            <Image src="/media/web-design.png" alt="Python Logo" width={130} height={130} />
 
             <p className="description">Станьте экспертом в веб-дизайне.<br /> За 2 месяца вы освоите работу в Figma, <br />научитесь проектировать удобные и современные интерфейсы, <br />и подготовите портфолио для будущей карьеры.</p>
           </div>
           <div className="ProFrontend Card">
             <h2>Продвинутый Frotnend</h2>
-            <img src="media/chemistry.png" alt="Python Logo" />
+            <Image src="/media/chemistry.png" alt="Python Logo" width={130} height={130} />
 
             <p className="description">Углубите свои знания в веб-разработке.<br /> За 2 месяца вы освоите Node.js и React, <br />что позволит вам создавать сложные и динамичные<br /> веб-приложения на профессиональном уровне.</p>
 

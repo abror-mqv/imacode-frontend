@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Lang from "./languages.webp";
 import Time from "./timetable.webp";
 
+import Image from "next/image";
+
 const TwoStyled = styled.article`
   @media only screen and (max-width: 920px) {
     & {
@@ -80,7 +82,7 @@ function Two() {
     <TwoStyled>
       <p className="Flexed">
       Мы разработали уникальную методику, которая позволяет нашим студентам освоить необходимые навыки всего за 2 месяца.
-      <img src="media/speed.png" alt="ImaCode is fast" />
+      <Image src="/media/speed.png" alt="ImaCode is fast" width={250} height={250} />
       </p>
       <p className="Wide">
       Это такой же объём знаний, который другие курсы предоставляют за бОльшее время, но вы экономите время и деньги.

@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Money from "./money.webp";
 import Team from "./team.webp";
+import Image from "next/image";
 
 const StyledFive = styled.article`
   @media only screen and (max-width: 920px) {
@@ -72,7 +73,7 @@ function Five() {
     <StyledFive>
       <p className="Flexed">
         Наши курсы находятся в самом центре города, на пересечении улиц Московская/Шопокова.
-        <img src="media/architecture-and-city.png" alt="Московская/Шопокова" />
+        <Image src="/media/architecture-and-city.png" alt="Московская/Шопокова" width={160} height={160}/>
       </p>
       <p className="Flexed">
         Вам не придётся тратить много времени на дорогу, что делает обучение еще комфортнее.

@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import PropTypes from 'prop-types';
+import Image from 'next/image';
 
 function CircularProgressWithLabel(props) {
     return (
@@ -153,7 +154,7 @@ function TestPage() {
                 <div className='result'>
                     <h4>Из тебя выйдет отличный <br></br>Ui/Ux Дизайн</h4>
                     <p className='FeDesc'>UI/UX-дизайнеры отвечают за то, чтобы сайты и приложения были не только красивыми, но и удобными. Они создают макеты и прототипы, тестируют пользовательские сценарии.</p>
-                    <img src="/media/uiux.jpg" alt="курсы веб-дизайна в бишкеке" className='desc_image' />
+                    <Image src="/media/uiux.jpg" alt="курсы веб-дизайна в бишкеке" className='desc_image' width={280} height={280}/>
                 </div>
             )
         } else if (result == 2) {
@@ -164,7 +165,7 @@ function TestPage() {
                     <p className='FeDesc'>
                         Веб-разработчики создают визуальную часть сайтов и веб-приложений. Они работают с HTML, CSS, JavaScript, чтобы сделать сайты интерактивными и удобными для пользователей.
                     </p>
-                    <img src="/media/fe.jpg" alt="курсы фронтенд бишкек" className='desc_image' />
+                    <Image src="/media/fe.jpg" alt="курсы фронтенд бишкек" className='desc_image' width={280} height={280}/>
 
                 </div>
             )
@@ -174,7 +175,7 @@ function TestPage() {
                     <h4>Из тебя выйдет отличный <br></br>Python разработчик</h4>
 
                     <p className='FeDesc'>Python-разработчики создают серверную логику, обрабатывают данные, создают веб-сервисы и боты. Этот язык также часто используется в машинном обучении и науке о данных.</p>
-                    <img src="/media/python.jpg" alt="курсы питона в бишкеке" className='desc_image' />
+                    <Image src="/media/python.jpg" alt="курсы питона в бишкеке" className='desc_image' width={280} height={280}/>
 
                 </div>
             )
@@ -191,9 +192,12 @@ function TestPage() {
         }
     }
         .desc_image{
-            width: 46%;
-            align-self: flex-end;
-            justify-self: end;
+            /* width: 46%; */
+            /* align-self: flex-end;
+            justify-self: end; */
+            width: auto !important;
+
+            min-width: auto !important;
         }
         .FeDesc{
             font-size: 28px;
@@ -289,9 +293,9 @@ function TestPage() {
                 }
             }
                 .desc_image{
-                    width: 40%;
-                    align-self: flex-end;
-                    justify-self: end;
+                    /* width: 40%; */
+                    /* align-self: flex-end;
+                    justify-self: end; */
                     margin-top: 4%;
                 }
                 .FeDesc{
@@ -313,7 +317,7 @@ function TestPage() {
                     margin-top: 24px;
                     img{
                         margin-left: 0;
-                        width: 20vh;
+                        /* width: 20vh; */
                         position: absolute;
                         bottom: 10vh;
                        
@@ -354,9 +358,11 @@ function TestPage() {
         <StyledTest>
             <Container className='App'>
                 <div className='illustration'>
-                    <img
+                    <Image
                         src="/media/test.jpg"
                         alt="Направления айти в бишкеке"
+                        width={500}
+                        height={500}
                     />
                 </div>
                 <div className='section'>

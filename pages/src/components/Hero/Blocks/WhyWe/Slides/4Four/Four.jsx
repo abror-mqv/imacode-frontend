@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Kaza from "./kaza.webp";
 import Goal from "./goal.webp";
+import Image from "next/image";
 
 const StyledFour = styled.article`
   @media only screen and (max-width: 920px) {
@@ -58,7 +59,7 @@ const StyledFour = styled.article`
   justify-content: start;
   gap: 6.5vh;
   img {
-    width: 16vh;
+    /* width: 16vh; */
   }
   .Flexed {
     display: flex;
@@ -83,7 +84,7 @@ function Four() {
         <p>
           Мы гордимся тем, что наши курсы лицензированы Министерством образования КР.
         </p>
-        <img src="media/certificate.png" alt="Сертификат" />
+        <Image src="/media/certificate.png" alt="Сертификат" width={150} height={150} />
       </p>
       <p className="Flexedd">
         По окончании обучения каждый студент получает диплом, который подтверждает его квалификацию и открывает новые карьерные возможности.

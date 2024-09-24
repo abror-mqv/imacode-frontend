@@ -1,7 +1,7 @@
 import { useSwiper } from "swiper/react";
 import { useEffect } from "react";
 import styled from "styled-components";
-
+import Image from "next/image";
 import NextButton from "./right.svg";
 // import NextImg from './'
 
@@ -45,7 +45,7 @@ const SwiperButtonNext = ({ children }) => {
         height: "80px",
       }}
     >
-      <img src={NextButton.src} alt="Следующий курс"/>
+      <Image src={NextButton.src} alt="Следующий курс" width={60} height={60}/>
     </Button>
   );
 };

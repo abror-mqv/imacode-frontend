@@ -12,6 +12,8 @@ import Three from "./Slides/3Three/Three";
 import Four from "./Slides/4Four/Four";
 import Five from "./Slides/5Five/Five";
 
+import Image from "next/image";
+
 const WhyWeStyled = styled.article`
   @media only screen and (max-width: 920px) {
     .Phone {
@@ -103,7 +105,7 @@ const WhyWeStyled = styled.article`
 function WhyWe() {
   return (
     <WhyWeStyled>
-      <img src="/media/whywe.jpg" className="Phone" alt="какие курсы вабрать" />
+      <Image src="/media/whywe.jpg" className="Phone" alt="какие курсы вабрать" width={580} height={580}/>
 
       <div className="Why">
         <h5>
